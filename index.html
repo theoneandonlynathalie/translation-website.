@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Translate Text</h1>
+        <div class="form-group">
+            <textarea id="input-text" placeholder="Enter text to translate"></textarea>
+        </div>
+        <div class="form-group">
+            <select id="source-language">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <!-- Add more languages here -->
+            </select>
+            <span>to</span>
+            <select id="target-language">
+                <option value="es">Spanish</option>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <!-- Add more languages here -->
+            </select>
+        </div>
+        <button id="translate-btn">Translate</button>
+        <div class="result">
+            <h3>Translation Result:</h3>
+            <p id="translation-result">Your translation will appear here...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
